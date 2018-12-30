@@ -155,7 +155,7 @@ describe('UPDATE /todos/:id', () => {
 
     it('should clear completedAt when todo is not completed', (done) => {
         var id = todos[1]._id.toHexString();
-        var text = 'this is the second update'
+        var text = 'this is the second update';
 
         request(app)
             .patch(`/todos/${id}`)

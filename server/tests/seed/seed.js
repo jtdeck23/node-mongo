@@ -43,6 +43,6 @@ const populateUsers = (done) => {
 
         return Promise.all([userOne, userTwo]);
     }).then(() => done());
-}
+};
 
 module.exports = {todos, users, populateTodos, populateUsers};
